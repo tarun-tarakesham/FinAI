@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router";
+import { createBrowserRouter } from "react-router";
 import { Home } from "./pages/Home";
 import { MortgageCalculator } from "./pages/MortgageCalculator";
 import { CompoundInterestCalculator } from "./pages/CompoundInterestCalculator";
@@ -10,7 +10,7 @@ import { CreditCardCalculator } from "./pages/CreditCardCalculator";
 import { ROICalculator } from "./pages/ROICalculator";
 import { Layout } from "./components/Layout";
 
-export const router = createHashRouter([
+export const router = createBrowserRouter([
   {
     path: "/",
     Component: Layout,
